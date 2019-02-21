@@ -1,0 +1,24 @@
+	
+	简单工厂，通过传入参数来判断创建的类型。
+	CarFactory carFactory = new CarFactory();
+		//Car car = carFactory.createCar("bmw");
+		Car car = carFactory.createCar("vw");
+		car.run();
+		
+	工厂方法模式：通过创建不同的工厂从而生产出不同的产品，便于扩展，
+		如果新增一门产品，只需要分别实现产品的抽象工厂以及该产品的抽象类
+		//CarFactory carFactory = new BMWFactory();
+		CarFactory carFactory = new VWFactory();
+		Car car = carFactory.createCar();
+		car.run();
+		
+	抽象工厂方法：宝马工厂生产宝马系列的产品，大众工厂生产大众系列的产品
+		如需要扩展，则写出系列产品和系列产品的工厂即可
+		
+		//AbstractFactory abstractfacotry = new BMWFactory();
+		AbstractFactory abstractfacotry = new VWFactory();
+		Car car = abstractfacotry.createCar();
+		car.run();
+		Tyre tyre = abstractfacotry.createTyre();//轮胎
+		tyre.name();
+	
