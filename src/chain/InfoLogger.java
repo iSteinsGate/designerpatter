@@ -1,4 +1,4 @@
-package com.hanyan.intelliman.test.ChainOfResponsibility;
+package chain;
 
 class InfoLogger extends AbstractLogger{
     public InfoLogger(AbstractLogger next){

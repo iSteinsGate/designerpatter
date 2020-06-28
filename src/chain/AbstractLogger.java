@@ -1,4 +1,4 @@
-package com.hanyan.intelliman.test.ChainOfResponsibility;
+package com.hanyan.intelliman.test.chain;
 
 /**
  * 抽象日志类
