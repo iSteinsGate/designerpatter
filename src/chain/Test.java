@@ -1,6 +1,7 @@
 package chain;
 
 /**
+ * 责任链模式
  * @author: tsinghui
  * @date: 2020-06-28 15:34
  **/

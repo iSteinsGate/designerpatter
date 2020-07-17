@@ -1,4 +1,4 @@
-package com.hanyan.intelliman.test.chain;
+package chain;
 
 /**
  * 抽象日志类
